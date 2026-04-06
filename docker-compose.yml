@@ -1,0 +1,15 @@
+services:
+  reddit-bot:
+    build: .
+    container_name: reddit_crawler_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./tracking.json:/app/tracking.json
+      - ./subscribers.json:/app/subscribers.json
+      - ./blacklist.json:/app/blacklist.json
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - PYTHONUNBUFFERED=1
