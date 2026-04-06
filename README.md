@@ -79,19 +79,21 @@ Edit `.env`:
 
 ```env
 # LLM Settings
-OPENAI_API_KEY=sk-your-api-key
+OPENAI_API_KEY=xxx
 OPENAI_BASE_URL=xxx
-OPENAI_MODEL_NAME=gpt-4o-mini
+OPENAI_MODEL_NAME=gpt-5.3-codex
+OPENAI_VISION_MODEL_NAME=gpt-5.3-codex
 
 # Telegram Settings
-TELEGRAM_BOT_TOKEN=123456:ABC-DEF...
-TELEGRAM_ADMIN_ID=your_telegram_user_id
+TELEGRAM_BOT_TOKEN=xxx
+TELEGRAM_ADMIN_ID=xxx
 
-# Reddit Target (Optional — defaults to LocalLLaMA)
+# Optional Constraints (Optional)
 SUBREDDIT=LocalLLaMA
 
-# Proxy (Optional — supports http/https/socks5)
-PROXY_URL=socks5://user:pass@host:port
+# VPN Settings (for NordVPN via Gluetun)
+# Get token from: https://my.nordvpn.com/dashboard/nordvpn/
+PROXY_URL=xxx
 ```
 
 ### 3. Run
