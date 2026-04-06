@@ -8,6 +8,7 @@ venv/
 
 # Data
 data/
+a.json
 
 # OS
 .DS_Store
